@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="extensions/status/deck.status.css">
 	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
 	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
+  <link rel="stylesheet" href="css/gantt-style.css" />
 	
 
 	<!-- Style theme. More available in /themes/style/ or create your own. -->
@@ -223,7 +224,7 @@
 
 <section class="slide">
 	<h2>スケジュール</h2>
-	<img src="images/GanttChart.png" />
+  <div class="gantt" style="width: 800px;height:200px"></div>
 </section>
 
 <section class="slide">
@@ -416,6 +417,7 @@
 <!-- Required JS files. -->
 <script src="jquery-1.7.2.min.js"></script>
 <script src="core/deck.core.js"></script>
+<script src="js/jquery.fn.gantt.min.js"></script>
 
 <!-- Extension JS files. Add or remove as needed. -->
 
@@ -431,7 +433,89 @@
 <script>
 	$(function() {
 		$.deck('.slide');
-	});
-</script>
+      $(".gantt").gantt({
+        source: [{
+          name: "",
+          desc: "",
+          values: [{
+            from: "/Date(2012,4,0)/",
+            to: "/Date(2012,5,30)/",
+            label: "環境構築", 
+            customClass: "ganttRed",
+          }]
+        },{
+          name: "",
+          desc: "",
+          values: [{
+            from: "/Date(2012,5,0)/",
+            to: "/Date(2012,5,29)/",
+            label: "Selenium 学習", 
+            customClass: "ganttRed"
+          }]
+        },{
+          name: "",
+          desc: "",
+          values: [{
+            from: "/Date(2012,5,0)/",
+            to: "/Date(2012,6,30)/",
+            label: "Ruby 学習", 
+            customClass: "ganttRed"
+          }]
+        },{
+          name: "",
+          desc: "",
+          values: [{
+            from: "/Date(2012,5,0)/",
+            to: "/Date(2012,6,30)/",
+            label: "HTML学習", 
+            customClass: "ganttRed"
+          }]
+        },{
+          name: "",
+          desc: "",
+          values: [{
+            from: "/Date(2012,6,0)/",
+            to: "/Date(2012,7,29)/",
+            label: "Git学習", 
+            customClass: "ganttRed"
+          }]
+        },{
+          name: "",
+          desc: "",
+          values: [{
+            from: "/Date(2012,8,0)/",
+            to: "/Date(2012,9,29)/",
+            label: "機能検討", 
+            customClass: "ganttOrange"
+          }]
+        },{
+          name: "",
+          desc: "",
+          values: [{
+            from: "/Date(2012,8,0)/",
+            to: "/Date(2012,9,29)/",
+            label: "Rails勉強", 
+            customClass: "ganttOrange"
+          }]
+        },{
+          name: "",
+          desc: "",
+          values: [{
+            from: "/Date(2012,9,0)/",
+            to: "/Date(2013,0,30)/",
+            label: "開発", 
+            customClass: "ganttOrange"
+          }]
+        }],
+        navigate: "scroll",
+        scale: "weeks",
+        maxScale: "months",
+        minScale: "days",
+        itemsPerPage: 10,
+        selector: "scroll",
+      });
+      prettyPrint();
+    });
+    </script>
 </body>
 </html>
