@@ -13,7 +13,7 @@
         var settings = {
             source: null,
             itemsPerPage: 7,
-            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            months: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
             dow: ["S", "M", "T", "W", "T", "F", "S"],
             startPos: new Date(),
             navigate: "buttons",
