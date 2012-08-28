@@ -1,6 +1,6 @@
 ﻿PFont myFont;
 
- size(1025,481); 
+ size(1026,481); 
   smooth();
   myFont = createFont("MS-Gothic", 15);
 textFont(myFont);
@@ -8,7 +8,7 @@ textFont(myFont);
  background(240,255,240);
  fill(220);
   rect(0,0,25,height);
-  for(int i=0; i<41; i++){
+  for(int i=0; i<42; i++){
     stroke(128);
  line(i*25,0,i*25,600);
  line(0,i*40+40,width,i*40+40);
@@ -61,7 +61,7 @@ textFont(myFont);
   
  fill(0);
  text("２ ０ １ ２ 年",420,15);
- text("２ ０ １ ３ 年",920,15);
+ text("２ ０ １ ３ 年",930,15);
   text("５月",70,35);
   text("６月",185,35);
   text("７月",285,35);
