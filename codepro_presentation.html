@@ -222,36 +222,21 @@
   <h2>採用した開発手法</h2>
   <p>繰り返し型開発</p>
   	<ul>
-      <li>バージョン管理</li>
+      <li>バージョン管理 GitHub</li>
     </ul>
   <p>ペアプログラミング</p>
   <p>テスト駆動開発</p>
   	<ul>
-      <li>Selenium</li>
+      <li>SeleniumIDE</li>
     </ul>
   <p>(勉強会)</p>
   <p>(議事録)</p>
 </section>
 
-<section class="slide">
-  <h2>実施するプラクティス</h2>
-  <p>GitHubを用いて、複数人でソースコードをバージョン管理する</p>
-	 <ul>
-    <li>GitHub</li>
-  　  </ul>
-	<p>分散バージョン管理システムによるバージョン管理</p>
-	<ul>
-		<li>Git</li>
-	</ul>
-	<p>テスト駆動開発</p>
-  <ul>
-    <li>Rubyの標準ライブラリを使用</li>
-  </ul>
-</section>
 
 <section class="slide">
-	<h2>スケジュール</h2>
-  <div class="gantt" style="width: 800px;height:200px"></div>
+	<h2>スケジュール　TODO 予定と実績を分ける</h2>
+  <div class="gantt" style="width: 900px;height:500px"></div>
 </section>
 
 <section class="slide">
@@ -270,7 +255,7 @@
 </section>
 
 <section class="slide">
-	<h2>活動結果</h2>
+	<h2>前期の活動の成果</h2>
 	<p>バージョン管理の方法<p>
 		<ul>
 			<li>Git,GitHubの使い方の習得</li>
@@ -279,16 +264,15 @@
 	    <ul>
 			<li>Rubyの動的型付け、クラス定義の方法</li>
 		</ul>
-	<p>seleniumの使い方</p>
+	<p>SeleniumIDEの使い方</p>
 	　　　<ul>
-			<li>seleniumIDEを用いてブラウザ上でテスト内容を記録し、Rubyのテストコードの生成方法を学習</li>
-			<li>生成したテストコードをAptanaStudio3上でjQueryMobileのwebページに対して実行できることを確認した</li>
+			<li>SeleniumIDEを用いてブラウザ上でテスト内容を記録し、Rubyのテストコードの生成方法を学習</li>
+			<li>生成したテストコードをjQueryMobileのwebページに対して実行できることを確認した</li>
 		</ul>
-	<p>アジャイルソフトウェア開発の基本的なプラクティスを学習した</p>
 </section>
 
 <section class="slide">
-	<h2>後期の活動</h2>
+	<h2>後期の活動の予定</h2>
 	<ul>
 	<li>スマートフォンで使用することを想定した、eポートフォリオの機能検討</li>
 	<li>技術習得のための勉強会</li>
@@ -312,18 +296,25 @@
 
 <section class="slide">
 	<h2>まとめ</h2>
-  <p>活動目的</p>
+  <h4>活動目的</h4>
   <ul>
-    <li>eポートフォリオシステムの利便性を向上させる</li>
+    <p>スマートフォン向けeポートフォリオシステムの開発</p>
+    <ul>
+    	<p>→　機能とユーザインタフェース</p>
+    </ul>
   </ul>
-  <p>活動結果</p>
+  <h4>採用した技術と手法</h4>
   <ul>
-    <li>Git,GitHubの使い方の習得</li>
-    <li>SeleniumIDEの使い方の習得</li>
+    <li>jQueryMobile, HTML5 DeviceAPI, Ruby on Rails</li>
+    <li>テスト駆動開発(SeleniumIDE), バージョン管理(GitHub), ペアプログラミング</li>
   </ul>
-  <p>今後の活動</p>
+  <h4>前期の活動の成果</h4>
   <ul>
-    <li>スマートフォン向けeポートフォリオの機能検討、試作開発</li>
+    <p>GitHub, SeleniumIDE, HTML5の学習</p>
+  </ul>
+  <h4>後期の活動の予定</h4>
+  <ul>
+    <p>スマートフォン向けeポートフォリオの機能検討、試作開発</p>
   </ul>
 </section>
 
@@ -465,7 +456,7 @@
           name: "",
           desc: "",
           values: [{
-            from: "/Date(2012,4,0)/",
+            from: "/Date(2012,4,1)/",
             to: "/Date(2012,5,30)/",
             label: "環境構築", 
             customClass: "ganttRed",
@@ -474,16 +465,34 @@
           name: "",
           desc: "",
           values: [{
-            from: "/Date(2012,5,0)/",
+            from: "/Date(2012,5,1)/",
             to: "/Date(2012,5,29)/",
-            label: "Selenium 学習", 
+            label: "SeleniumIDE 学習", 
             customClass: "ganttRed"
           }]
         },{
           name: "",
           desc: "",
           values: [{
-            from: "/Date(2012,5,0)/",
+            from: "/Date(2012,6,1)/",
+            to: "/Date(2012,7,29)/",
+            label: "GitHub 学習", 
+            customClass: "ganttRed"
+          }]
+        },{
+          name: "",
+          desc: "",
+          values: [{
+            from: "/Date(2012,9,1)/",
+            to: "/Date(2012,9,29)/",
+            label: "ペアプログラミング学習", 
+            customClass: "ganttRed"
+          }]
+        },{
+          name: "",
+          desc: "",
+          values: [{
+            from: "/Date(2012,5,1)/",
             to: "/Date(2012,6,30)/",
             label: "Ruby 学習", 
             customClass: "ganttRed"
@@ -492,25 +501,34 @@
           name: "",
           desc: "",
           values: [{
-            from: "/Date(2012,5,0)/",
+            from: "/Date(2012,5,1)/",
             to: "/Date(2012,6,30)/",
-            label: "HTML学習", 
+            label: "HTML5 学習", 
             customClass: "ganttRed"
           }]
         },{
           name: "",
           desc: "",
           values: [{
-            from: "/Date(2012,6,0)/",
-            to: "/Date(2012,7,29)/",
-            label: "Git学習", 
+            from: "/Date(2012,8,2)/",
+            to: "/Date(2012,9,29)/",
+            label: "HTML5 DeviceAPI 学習", 
             customClass: "ganttRed"
           }]
         },{
           name: "",
           desc: "",
           values: [{
-            from: "/Date(2012,8,0)/",
+            from: "/Date(2012,9,1)/",
+            to: "/Date(2012,10,29)/",
+            label: "Ruby on Rails 学習", 
+            customClass: "ganttRed"
+          }]
+        },{
+          name: "",
+          desc: "",
+          values: [{
+            from: "/Date(2012,8,1)/",
             to: "/Date(2012,9,29)/",
             label: "機能検討", 
             customClass: "ganttOrange"
@@ -519,16 +537,16 @@
           name: "",
           desc: "",
           values: [{
-            from: "/Date(2012,8,0)/",
+            from: "/Date(2012,8,1)/",
             to: "/Date(2012,9,29)/",
-            label: "Rails勉強", 
+            label: "ユーザインタフェース検討", 
             customClass: "ganttOrange"
           }]
         },{
           name: "",
           desc: "",
           values: [{
-            from: "/Date(2012,9,0)/",
+            from: "/Date(2012,10,1)/",
             to: "/Date(2013,0,30)/",
             label: "開発", 
             customClass: "ganttOrange"
@@ -538,7 +556,7 @@
         scale: "weeks",
         maxScale: "months",
         minScale: "days",
-        itemsPerPage: 10,
+        itemsPerPage: 11,
         selector: "scroll",
       });
       prettyPrint();
