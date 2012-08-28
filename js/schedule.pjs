@@ -1,89 +1,92 @@
-﻿PFont myFont;
+PFont myFont;
 
- size(1026,481); 
+
+  size(903,481); 
   smooth();
   myFont = createFont("MS-Gothic", 15);
-textFont(myFont);
+  textFont(myFont);
 
  background(240,255,240);
  fill(220);
-  rect(0,0,25,height);
+  rect(0,0,22,height);
   for(int i=0; i<42; i++){
     stroke(128);
- line(i*25,0,i*25,600);
- line(0,i*40+40,width,i*40+40);
-  }
+ line(i*22,0,i*22,600);
+ line(0,i*40+40,902,i*40+40);
+  
   
   fill(220); 
-  rect(25,0,875,20);
-  rect(900,0,125,20); 
+  rect(22,0,880,20); 
 
-  rect( 25,20,25*5,20); 
-  rect(150,20,25*4,20); 
-  rect(250,20,25*4,20); 
-  rect(350,20,25*5,20); 
-  rect(475,20,25*4,20); 
-  rect(575,20,25*5,20);
-  rect(700,20,25*4,20);
-  rect(800,20,25*4,20);
-  rect(900,20,25*5,20);
+  rect( 22,20,22*5,20); 
+  rect(132,20,22*4,20); 
+  rect(220,20,22*4,20); 
+  rect(308,20,22*5,20); 
+  rect(418,20,22*4,20); 
+  rect(506,20,22*5,20);
+  rect(616,20,22*4,20);
+  rect(704,20,22*4,20);
+  rect(792,20,22*5,20);
   
   strokeWeight(2);
-  line(25,0,25,height);
-  line(150,20,150,height);
-  line(250,20,250,height);
-  line(350,20,350,height);
+  line(22,0,22,height);
+  line(132,20,132,height);
+  line(220,20,220,height);
+  line(308,20,308,height);
  strokeWeight(4);
-  line(475,20,475,height);
+  line(418,20,418,height);
  strokeWeight(2);
-  line(575,20,575,height);
-  line(700,20,700,height);
-  line(800,20,800,height);
-  line(900,0,900,height);
+  line(506,20,506,height);
+  line(616,20,616,height);
+  line(704,20,704,height);
+  line(792,0,792,height);
   
-  line(25,20,width,20);
+  line(22,20,width,20);
   strokeWeight(1);
 
   fill(255,150,200);
-  rect( 26, 44,224,32);
-  rect(150, 84,100,32);
-  rect(250,124,223,32);
-  rect(575,164,125,32); 
-  rect(150,204,225,32);
-  rect(150,244,225,32);
-  rect(477,284,223,32);
-  rect(575,324,225,32);
+  rect( 22, 44,198,32);
+  rect(132, 84,88,32);
+  rect(220,124,196,32);
+  rect(506,164,110,32); 
+  rect(132,204,176,32);
+  rect(132,244,176,32);
+  rect(419,284,196,32);
+  rect(506,324,198,32);
 
   fill(255,200,50);
-  rect(477,364,223,32);
-  rect(477,404,223,32);
-  rect(700,444,325,32);
+  rect(419,364,196,32);
+  rect(419,404,196,32);
+  rect(616,444,286,32);
   
  fill(0);
- text("２ ０ １ ２ 年",420,15);
- text("２ ０ １ ３ 年",930,15);
-  text("５月",70,35);
-  text("６月",185,35);
-  text("７月",285,35);
-  text("８月",400,35);
-  text("９月",510,35);
-  text("１０月",615,35);
-  text("１１月",725,35);
-  text("１２月",830,35);
-  text("１月",945,35);
+ text("２ ０ １ ２ 年",400,15);
+ text("２ ０ １ ３ 年",805,15);
+  text("５月",65,35);
+  text("６月",160,35);
+  text("７月",250,35);
+  text("８月",350,35);
+  text("９月",445,35);
+  text("１０月",535,35);
+  text("１１月",635,35);
+  text("１２月",725,35);
+  text("１月",830,35);
 
-  text("開発環境",110,65);
-  text("SeleniumIDE学習",145,105);
-  text("GitHub学習",325,145);
-  text("ペアプログラミング学習",555,185);
-  text("Ruby学習",230,225);
-  text("HTML5学習",225,265);
+  text("開発環境",95,65);
+  text("SeleniumIDE学習",115,105);
+  text("GitHub学習",275,145);
+  text("ペアプログラミング学習",490,185);
+  text("Ruby学習",190,225);
+  text("HTML5学習",185,265);
 
-  text("HTML5 Device API学習",520,305);
-  text("Ruby on Rails学習",625,345);
+  text("HTML5 Device API学習",450,305);
+  text("Ruby on Rails学習",550,345);
  
-  text("機能検討",555,385);
-  text("ユーザインタフェース検討",495,425);
-  text("開発",840,465);
+  text("機能検討",490,385);
+  text("ユーザインタフェース検討",430,425);
+  text("開発",760,465);
 
-
+//fill(0);
+//text(mouseX,mouseX-20,mouseY+10);
+//text(mouseY,mouseX-20,mouseY+20);
+}
