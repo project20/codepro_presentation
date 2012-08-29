@@ -3,7 +3,7 @@ int r =22;
 int h = 30;
 
 void setup(){
-  size(902,461); 
+  size(903,461); 
   smooth();
   myFont = createFont("MS-Gothic", 15);
   textFont(myFont);
@@ -53,13 +53,16 @@ void draw(){
   
   strokeWeight(1);
 
+  line(0,0,width,0);
+  line(0,height,width,height);
+
 noStroke();
 
  int env_sta[] = {1,1};
  int env_wid[] = {9,9};
-fill(225,240,255,150); //skelton blue
+fill(210,220,255,150); //skelton blue
 rect(30,55,r*8+5,h+15);
- fill(225,240,255); //blue
+ fill(210,220,255); //blue
 for(int i=0; i<2; i++){
    rect(r*env_sta[i]+2,43+(i*h),r*env_wid[i]-3,h-6);
    fill(144,200,255); //deeeeeeeeeeeeeeep blue
