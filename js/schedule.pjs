@@ -3,7 +3,7 @@ int r =22;
 int h = 30;
 
 void setup(){
-  size(903,461); 
+  size(903,431); 
   smooth();
   myFont = createFont("MS-Gothic", 15);
   textFont(myFont);
@@ -78,12 +78,12 @@ for(int i=0; i<8; i++){
    fill(255,150,200); //deeeeeeeeeeeep pink
 }
   
- int prd_sta[]={19,15,15,28};
- int prd_wid[]={22,13,13,13};
+ int prd_sta[]={19,15,19};
+ int prd_wid[]={22,21,22};
 fill(255,230,160,110); //skelton orange
-rect(430-5,350,r*22,h*3+15);
+rect(430-5,350,r*22,h*2+15);
   fill(255,230,160); //orange
-for(int i=0; i<4;i++){
+for(int i=0; i<3;i++){
    rect(r*prd_sta[i],343+(h*i),r*prd_wid[i],h-6);
    fill(255,200,50); //deeeeeeep orange
   }
@@ -111,9 +111,9 @@ for(int i=0; i<4;i++){
   text("HTML5 Device API学習",450,300);
   text("Ruby on Rails学習",550,330);
  
-  text("機能検討",440,390);
-  text("ユーザインタフェース検討",380,420);
-  text("開発",750,450);
+  text("仕様",540,390);
+//  text("ユーザインタフェース検討",380,420);
+  text("実装",650,420);
 
 text("環境構築（予定）",75,60);
 text("学習（予定）",410,120);
