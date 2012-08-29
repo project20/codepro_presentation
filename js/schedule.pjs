@@ -5,12 +5,12 @@ int h = 30;
 void setup(){
   size(903,431); 
   smooth();
-  myFont = createFont("MS-Gothic", 15);
+  myFont = createFont("MS-Gothic", 20);
   textFont(myFont);
 }
 
 void draw(){
- background(220,255,220);
+ background(255);
  fill(220);
   rect(0,0,r,height);
   for(int i=0; i<42; i++){
@@ -108,8 +108,8 @@ for(int i=0; i<3;i++){
   text("ペアプログラミング学習",480,210);
   text("Ruby学習",190,240);
   text("HTML5学習",185,270);
-  text("HTML5 Device API学習",450,300);
-  text("Ruby on Rails学習",550,330);
+  text("HTML5 Device API学習",425,300);
+  text("Ruby on Rails学習",530,330);
  
   text("仕様",540,390);
 //  text("ユーザインタフェース検討",380,420);
