@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=1024, user-scalable=no">
 
-	<title>夏季合宿発表</title>
+	<title>中間報告会</title>
 	
 	<!-- Required stylesheet -->
 	<link rel="stylesheet" href="core/deck.core.css">
@@ -40,7 +40,7 @@
 	<br /><br /><br /><br /><br />
 	   <h3>M2 佐藤隆広</h3>
     <h3>M1 秀毛嶺維馬</h3>
-	<h3>B3 <u>山本賢人</u> 梅本祥平 中野佑 菊谷悠太</h3>
+	<h3>B3 <b style="color: #f00">*</b>山本賢人 梅本祥平 中野佑 菊谷悠太</h3>
 	<h3>B2 菅野久樹 佐藤祐磨 赤木勇極</h3>
 
 	
@@ -48,7 +48,7 @@
 
 <section class="slide">
 	<h2>アジェンダ</h2>
-	<p>背景：eポートフォリオシステムとは</p>
+	<p>背景：eポートフォリオシステム</p>
 	<p>提案：スマートフォンによる情報共有の促進</p>
 	<p>活動目的</p>
 	<p>開発技術、手法</p>
@@ -58,12 +58,12 @@
 </section>
 
 <section class="slide">
-	<h2>背景：eポートフォリオシステムとは</h2>
+	<h2>背景：eポートフォリオシステム</h2>
 	<table>
 		<tr>
 			<td>
 			<p>
-				大学教育の質を保証するためのeポートフォリオシステム
+				大学教育の質を保証するためのWebアプリケーション
 			</p>
 			<ul>
 				<li>
@@ -106,19 +106,18 @@
 	<table>
 		<tr>
 			<td>
-				<p>eポートフォリオシステムをスマートフォンから利用することによって可能になること</p>
 				<ul>
-					<li>共有中の成果物の更新を即座に確認できる
+					<li>共有中の成果物の更新を即座に確認
 						<ul>
-							<li>時間外活動のときもを共有できる</li>
+							<li>活動に参加していなくても情報を共有できる</li>
 						</ul>
 					</li>
-					<li>短いメッセージを手軽に返信できる
+					<li>短いメッセージを手軽に返信
 						<ul>
 							<li>素早いフィードバックができる</li>
 						</ul>
 					</li>
-					<li>写真や動画を簡単にアップロードできる
+					<li>写真や動画を簡単にアップロード
 						<ul>
 							<li>写真や動画がより多く蓄積される</li>
 						</ul>
@@ -127,7 +126,7 @@
 			</td>
 			<td>&nbsp;</td>
       		<td style="vertical-align: top">
-        		<img src="images/eportfolio_smart.gif" width="580px"/>
+        		<img src="images/eportfolio_smart.gif" width="520px"/>
       		</td>
 		</tr>
 	</table>
@@ -181,10 +180,10 @@
 
 
 <section class="slide">
-	<h2>活動目的：スマートフォン向けeポートフォリオシステムの開発</h2>
+	<h2>活動目的：eポートフォリオシステムをスマートフォン向けに拡張</h2>
 	<p>スマートフォン向けの機能</p>
 	 <ul>
-	 	<li>通知機能とアップロード機能をメインにする</li>
+	 	<li><strong>通知機能</strong>と<strong>アップロード機能</strong>をメインにする</li>
 	 	<li>スマートフォンから使える機能を限定する</li>
 	 </ul>
 	<p>スマートフォン向けのユーザインタフェース</p>
@@ -198,7 +197,7 @@
   <h2>必要となる開発技術</h2>
   <table>
     <tr>
-      <td width="40%">
+      <td width="50%">
           <p>スマートフォン向けのUIの実現</p>
       </td>
       <td width="10%" align="center" valign="middle">→</td>
@@ -214,10 +213,16 @@
    </table>
    <table>
    	<td>
-   		<img src="images/login_sample.png" width="300px"/>
+   	</br>
+   	</br>
+   	</br>
+   		<img src="images/hikaku.gif" width="650px"/>
    	</td>
    	<td>
-   		<img src="images/hikaku.png" width="650px"/>
+   		<p>　　</p>
+   	</td>
+   	<td>
+   		<img src="images/login_sample.png" width="250px"/>
    	</td>
    </tr>
   </table>	
@@ -225,19 +230,18 @@
 
 <section class="slide">
   <h2>採用した開発手法</h2>
-   <hr />
-   <table>
+   <table style="border: 0px solid #000">
     <tr>
-      <td width="15%">
+      <td width="10%">
           <p>仕様が定まっていない</p>
       </td>
-      <td width="10%" align="center" valign="middle">→</td>
+      <td width="5%" align="center" valign="middle">→</td>
       <td width="40%">
       	<p>繰り返し型開発</p>
       	<ul>
       		<li>バージョン管理(GitHub)</li>
       			<ul>
-      				<p>GitのWebホスティングサービス</p>
+      				<p>変更履歴を管理することで複数人の開発をサポートする</p>
       			</ul>
       		<li>回帰テスト(SeleniumIDE)</li>
       			<ul>
@@ -247,27 +251,28 @@
       </td>
     </tr>
    </table>
-   <hr />
-   <table>
+   <hr style="margin: 0px; color: #000;" size="5"/>
+   <table style="border: 0px solid #000">
     <tr>
-    	<td width="15%">
+    	<td width="10%">
           <p>知識の共有</p>
         </td>
-      <td width="10%" align="center" valign="middle">→</td>
+      <td width="5%" align="center" valign="middle">→</td>
       <td width="40%">
-      	<div>ペアプログラミング</div>
-      	<div>(議事録)</div>
-      	<div>(勉強会)
+      	<ul>
+      	<li>ペアプログラミング</li>
+      	<li>議事録</li>
+      	<li>勉強会
       	<ul>
       		<li>GitHub</li>
       		<li>Ruby</li>
       		<li>jQuery Mobile, HTML5 Canvas</li>
       	</ul>
-      	</div>
+      	</li>
+      	</ul>
       </td>
     </tr>
    </table>
-   <hr />
 </section>
 
 <section class="slide">
@@ -275,15 +280,17 @@
 </section>
 
 <section class="slide">
-	<h2>ユーザストーリー(更新情報の通知機能)</h2>
+	<h2>通知機能：更新情報の通知</h2>
 	<p>共有している成果物が変更されると、システムから即時通知をうけられる</p>
+	<p>利用例：　共有しているソースコードが書き換えられると、グループメンバーに通知が届く</p>
 	<img src="images/push_chart.png" />
 </section>
 
 <section class="slide">
-	<h2>ユーザストーリー(写真アップロード機能)</h2>
+	<h2>アップロード機能：写真のアップロード</h2>
 	<table>
 	<p>学習成果物として使いたい写真や動画を、PCを介さずに直接アップロードする</p>
+	<p>利用例：　ホワイトボードの写真を議事録に添付する</p>
 	<br/><br/>
 	<td>
 		<img src="images/shot_scene.gif" width="500px"/>
@@ -412,11 +419,11 @@
 <section class="slide">
 	<h2>前期からの学び</h2>
 	<ul>
-		<li>上級生が知識を教える予定だったが、2年生しか集まれないときがあった</li>
+		<li>上級生が知識を教える予定だったが、2年生しか集まれないことがあった</li>
 		<ul>→　事前のタスク割り振りなどにより、全員が集合できなくても作業で<br/>　 　きるように改善する</ul>
-		<li>分散バージョン管理システムを使ってみてチーム開発に便利だとわかった</li>
-		<li>commitメッセージがあいまいだった</li>
-		<ul>→　commitメッセージについて学習する</ul>
+		<li>分散バージョン管理システムを使ってみて、チーム開発に便利だとわかった</li>
+		<li>commitメッセージの書き方を取り決めていなかったため、どう変更したのかわからなかった</li>
+		<ul>→　commitメッセージについて取り決める</ul>
 		<li>Ruby on Railsの学習が必要だとわかった</li>
 		<ul>→　後期に学習する</ul>
 	</ul>
