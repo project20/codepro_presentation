@@ -5,7 +5,7 @@ int h = 30;
 void setup(){
   size(903,431); 
   smooth();
-  myFont = createFont("MS-Gothic", 20);
+  myFont = createFont("MS-Gothic_Bold", 19);
   textFont(myFont);
 }
 
@@ -90,8 +90,8 @@ for(int i=0; i<3;i++){
   
 
  fill(0);
- text("２ ０ １ ２ 年",400,15);
- text("２ ０ １ ３ 年",805,15);
+ text("２０１２ 年",400,15);
+ text("２０１３ 年",805,15);
   text("５月",65,35);
   text("６月",160,35);
   text("７月",250,35);
@@ -108,7 +108,7 @@ for(int i=0; i<3;i++){
   text("ペアプログラミング学習",480,210);
   text("Ruby学習",190,240);
   text("HTML5学習",185,270);
-  text("HTML5 Device API学習",425,300);
+  text("HTML5 Device API学習",420,300);
   text("Ruby on Rails学習",530,330);
  
   text("仕様",540,390);
