@@ -1,9 +1,9 @@
 PFont myFont;
 int r =22;
-int h = 30;
+int h = 35;
 
 void setup(){
-  size(903,431); 
+  size(903,40+13*h+1); 
   smooth();
   myFont = createFont("MicrosoftYaHei-Bold-20", 19);
   textFont(myFont);
@@ -48,8 +48,8 @@ void draw(){
   line(22,20,width,20);
   
   line(0,40,width,40);
-  line(0,100,width,100);
-  line(0,340,width,340);
+  line(0,40+(h*2),width,40+(h*2));
+  line(0,40+(h*10),width,40+(h*10));
   
   strokeWeight(1);
 
@@ -68,13 +68,13 @@ for(int i=0; i<2; i++){
    fill(144,200,255); //deeeeeeeeeeeeeeep blue
 }
 
- int lrn_sta[]={6,6,10,19,6,6,19,23};
+ int lrn_sta[]={6,6,10,23,6,6,19,23};
  int lrn_wid[]={30,4, 9, 5,8,8, 9, 9};
 fill(255,200,220,90); // skelton pink
 rect(140,115,r*29+8,h*7+10); 
  fill(255,200,220); //pink
 for(int i=0; i<8; i++){
-   rect(r*lrn_sta[i],103+(h*i),r*lrn_wid[i],h-6);
+   rect(r*lrn_sta[i],40+(h*2)+3+(h*i),r*lrn_wid[i],h-6);
    fill(255,170,220); //deeeeeeeeeeeep pink
 }
   
@@ -84,7 +84,7 @@ fill(255,230,160,110); //skelton orange
 rect(430-5,350,r*22,h*2+15);
   fill(255,230,160); //orange
 for(int i=0; i<3;i++){
-   rect(r*prd_sta[i],343+(h*i),r*prd_wid[i],h-6);
+   rect(r*prd_sta[i],40+(h*10)+3+(h*i),r*prd_wid[i],h-6);
    fill(255,200,50); //deeeeeeep orange
   }
   
@@ -102,22 +102,22 @@ for(int i=0; i<3;i++){
   text("１２月",725,35);
   text("１月",830,35);
 
-  text("環境構築",95,90);
-  text("SeleniumIDE学習",115,150);
-  text("GitHub学習",275,180);
-  text("ペアプログラミング学習",380,210);
-  text("Ruby学習",190,240);
-  text("HTML5学習",185,270);
-  text("HTML5 Device API学習",420,300);
-  text("Ruby on Rails学習",530,330);
+  text("環境構築",95,30+(h*2));
+  text("SeleniumIDE学習",115,30+(h*4));
+  text("GitHub学習",275,30+(h*5));
+  text("ペアプログラミング学習",480,30+(h*6));
+  text("Ruby学習",190,30+(h*7));
+  text("HTML5学習",185,30+(h*8));
+  text("HTML5 Device API学習",420,30+(h*9));
+  text("Ruby on Rails学習",530,30+(h*10));
  
-  text("仕様",540,390);
+  text("仕様",540,30+(h*12));
 //  text("ユーザインタフェース検討",380,420);
-  text("実装",650,420);
+  text("実装",650,30+(h*13));
 
-text("環境構築（予定）",75,60);
-text("学習（予定）",410,120);
-text("開発（予定）",590,360);
+text("環境構築（予定）",75,30+(h*1));
+text("学習（予定）",410,30+(h*3));
+text("開発（予定）",590,30+(h*11));
   
 //
 //fill(0);
