@@ -35,26 +35,31 @@
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <section class="slide">
-	<h2 align="center">スマートフォンへの対応に向けた<br />eポートフォリオシステムの拡張</h2>
+	<br /><br />
+	<h2 align="center" style="font-size: 2.3em">スマートフォンへの対応に向けた<br />eポートフォリオシステムの拡張</h2>
 	<!--<h4 align="center">with アジャイルソフトウェア開発</h4>-->
 	<br /><br /><br /><br /><br />
-	   <h3>M2 佐藤隆広</h3>
-    <h3>M1 秀毛嶺維馬</h3>
-	<h3>B3 <b style="color: #f00">*</b>山本賢人 梅本祥平 中野佑 菊谷悠太</h3>
-	<h3>B2 菅野久樹 佐藤祐磨 赤木勇極</h3>
+	   <h4>M2 佐藤隆広</h4>
+    <h4>M1 秀毛嶺維馬</h4>
+	<h4>B3 <u>○ 山本賢人</u> 梅本祥平 中野佑 菊谷悠太</h4>
+	<h4>B2 菅野久樹 佐藤祐磨 赤木勇極</h4>
+	<br />
+	<p align="center">2012/08/31 2012年度　前期　高度ICT演習成果発表会</p>
 
 	
 </section>
 
 <section class="slide">
 	<h2>アジェンダ</h2>
-	<p>背景：eポートフォリオシステム</p>
-	<p>提案：スマートフォンによる情報共有の促進</p>
-	<p>活動目的</p>
-	<p>開発技術、手法</p>
-	<p>ユーザストーリー</p>
-	<p>活動</p>
-	<p>前期からの学び</p>
+	<ol style="font-size: 1.2em">
+	<li>背景：eポートフォリオシステム</li>
+	<li>提案：スマートフォンによる情報共有の促進</li>
+	<li>利用例</li>
+	<li>活動目的</li>
+	<li>開発技術、手法</li>
+	<li>スケジュール</li>
+	<li>前期からの学び</li>
+	</ol>
 </section>
 
 <section class="slide">
@@ -62,9 +67,8 @@
 	<table>
 		<tr>
 			<td>
-			<p>
-				大学教育の質を保証するためのWebアプリケーション
-			</p>
+				<p>大学教育の変化により、学習ポートフォリオが必要に</p>
+				<p>eポートフォリオシステムとして実現される</p>
 			<ul>
 				<li>
 					学習成果物を作成・蓄積→振り返り
@@ -78,18 +82,8 @@
 			</p>
 			<ul>
 				<li>
-					プロジェクト学習の授業で<u>未来大向け</u>eポートフォリオシステムを開発中
-					<ul>
-						<li>
-							本学のカリキュラムに合わせた機能
-						</li>
-						<li>
-							本学の書式をテンプレートとして提供
-							<ul>
-								<li>レポート、論文など</li>
-							</ul>
-						</li>
-					</ul>
+					プロジェクト学習の授業で<u>未来大のプロジェクト学習向け</u>eポートフォリオシステムを開発中
+				<ul>本学のプロジェクト学習では情報共有が課題</ul>
 				</li>
 			</ul></td>
 			<td>&nbsp;</td>
@@ -194,6 +188,29 @@
 </section>
 
 <section class="slide">
+	<h2>通知機能：更新情報の通知</h2>
+	<p>共有している成果物が変更されると、システムから即時通知をうけられる</p>
+	<p>ユーザストーリー：　共有しているソースコードが書き換えられると、グループメンバーに通知が届く</p>
+	<img src="images/push_chart.png" />
+</section>
+
+<section class="slide">
+	<h2>アップロード機能：写真のアップロード</h2>
+	<table>
+	<p>学習成果物として使いたい写真や動画を、PCを介さずに直接アップロードする</p>
+	<p>ユーザストーリー：　ホワイトボードの写真を議事録に添付する</p>
+	<br/><br/>
+	<td>
+		<img src="images/shot_scene.gif" width="500px"/>
+	</td>
+	<td>
+		<img src="images/upload_scene.gif" width="300px" />
+	</td>
+	</table>
+</section>
+
+
+<section class="slide">
   <h2>必要となる開発技術</h2>
   <table>
     <tr>
@@ -275,31 +292,6 @@
    </table>
 </section>
 
-<section class="slide">
-	<h1>ユーザストーリー</h1>
-</section>
-
-<section class="slide">
-	<h2>通知機能：更新情報の通知</h2>
-	<p>共有している成果物が変更されると、システムから即時通知をうけられる</p>
-	<p>利用例：　共有しているソースコードが書き換えられると、グループメンバーに通知が届く</p>
-	<img src="images/push_chart.png" />
-</section>
-
-<section class="slide">
-	<h2>アップロード機能：写真のアップロード</h2>
-	<table>
-	<p>学習成果物として使いたい写真や動画を、PCを介さずに直接アップロードする</p>
-	<p>利用例：　ホワイトボードの写真を議事録に添付する</p>
-	<br/><br/>
-	<td>
-		<img src="images/shot_scene.gif" width="500px"/>
-	</td>
-	<td>
-		<img src="images/upload_scene.gif" width="300px" />
-	</td>
-	</table>
-</section>
 
 <section class="slide">
 	<h2>スケジュール</h2>
@@ -394,6 +386,14 @@
 </section>
 
 <section class="slide">
+	<h2>スケジュール（再掲）</h2>
+	
+  <div>
+  	<canvas data-processing-sources="js/schedule.pjs" id="schedule"  width="821" height="371"></canvas>  	
+  </div>  
+</section>
+
+<section class="slide">
 	<h2>後期の活動の予定</h2>
 	<p>ペアプログラミングの学習</p>
 	<p>HTML5 Device APIの学習</p>
@@ -413,18 +413,14 @@
 </section>
 
 <section class="slide">
-	<h1>学び</h1>
-</section>
-
-<section class="slide">
 	<h2>前期からの学び</h2>
 	<ul>
 		<li>上級生が知識を教える予定だったが、2年生しか集まれないことがあった</li>
 		<ul>→　事前のタスク割り振りなどにより、全員が集合できなくても作業で<br/>　 　きるように改善する</ul>
-		<li>分散バージョン管理システムを使ってみて、チーム開発に便利だとわかった</li>
+		<li>分散バージョン管理システムによって、効率的に共有ファイルを編集できるということがわかった。</li>
 		<li>commitメッセージの書き方を取り決めていなかったため、どう変更したのかわからなかった</li>
 		<ul>→　commitメッセージについて取り決める</ul>
-		<li>Ruby on Railsの学習が必要だとわかった</li>
+		<li>拡張のためには、Ruby on Railsの学習が必要とわかったため、学習を行う</li>
 		<ul>→　後期に学習する</ul>
 	</ul>
 </section>
@@ -433,12 +429,12 @@
 	<h2>まとめ</h2>
   <h4>活動目的</h4>
   <ul>
-    <p>スマートフォン向けeポートフォリオシステムの開発</p>
+    <p>スマートフォン向けeポートフォリオシステムの拡張</p>
     <ul>
     	<p>→　機能とユーザインタフェース</p>
     </ul>
   </ul>
-  <h4>ユーザストーリー</h4>
+  <h4>予定している機能</h4>
   <ul>
     <li>更新情報の通知機能</li>
     <li>写真アップロード機能</li>
