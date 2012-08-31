@@ -78,8 +78,8 @@ for(int i=0; i<8; i++){
    fill(255,170,220); //deeeeeeeeeeeep pink
 }
   
- int prd_sta[]={19,15,20};
- int prd_wid[]={22,21,22};
+ int prd_sta[]={19,15,23};
+ int prd_wid[]={22,21,18};
 fill(255,230,160,110); //skelton orange
 rect(430-5,h*12,r*22,h*2+15);
   fill(255,230,160); //orange
